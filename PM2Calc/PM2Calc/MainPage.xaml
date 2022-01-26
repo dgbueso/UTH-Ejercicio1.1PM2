@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2Calc.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Calculadora Ejercicio 1.1" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <Entry Keyboard="Numeric" Placeholder="Ingrese 1er Numero" x:Name="txtN1"/>
+        <Entry Keyboard="Numeric" Placeholder="Ingrese 2do Numero" x:Name="txtN2"/>
+        <Label Text="Seleccione una Operacion"/>
+        <Picker Title="Operaciones" x:Name="txtoperacion" SelectedIndexChanged="txtoperacion_SelectedIndexChanged"/>
+        <Label Text="-------" x:Name="lblRes"/>
+    </StackLayout>
+
+</ContentPage>
